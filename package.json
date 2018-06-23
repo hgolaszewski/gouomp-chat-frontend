@@ -1,0 +1,48 @@
+{
+  "name": "gouomp-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-flowtype": "^2.46.3",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "flow-bin": "^0.61.0",
+    "husky": "^1.0.0-rc.2",
+    "jest-expo": "~27.0.0",
+    "react-native-scripts": "^1.14.0",
+    "react-test-renderer": "^16.3.1"
+  },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  },
+  "scripts": {
+    "start": "react-native-scripts start",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "android": "react-native-scripts android",
+    "test": "jest",
+    "build": "exp build:android"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "expo": "^27.0.1",
+    "react": "^16.3.1",
+    "react-native": "~0.55.2",
+    "react-native-gifted-chat": "0.4.3",
+    "react-navigation": "^2.0.1",
+    "sockjs-client": "^1.1.5",
+    "stompjs": "^2.3.3"
+  }
+}

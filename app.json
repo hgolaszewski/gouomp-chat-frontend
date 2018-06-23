@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "Gouomp",
+    "icon": "./assets/logo.png",
+    "version": "1.0.0",
+    "slug": "gouomp",
+    "sdkVersion": "27.0.0",
+    "android": {
+      "package": "pl.edu.wat.gouomp"
+    },
+    "orientation": "portrait",
+    "androidStatusBar": {
+      "barStyle": "dark-content",
+      "backgroundColor": "#000000"
+    }
+  }
+}
